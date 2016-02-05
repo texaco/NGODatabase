@@ -1,0 +1,2 @@
+CREATE SCHEMA `mjrojase_ngo` DEFAULT CHARACTER SET utf8 ;
+

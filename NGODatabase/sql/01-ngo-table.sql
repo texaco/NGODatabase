@@ -1,0 +1,8 @@
+CREATE TABLE `mjrojase_ngo`.`ngo` (
+  `id` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `name` VARCHAR(45) NOT NULL COMMENT '',
+  `description` VARCHAR(45) NULL COMMENT '',
+  `email` VARCHAR(45) NOT NULL COMMENT '',
+  PRIMARY KEY (`id`)  COMMENT '',
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC)  COMMENT '');
+
