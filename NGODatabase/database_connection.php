@@ -1,11 +1,6 @@
 <?php
-// Configuration to the database connection.
 
-define("DB_USER", "root");
-define("DB_NAME", "mjrojase_ngo");
-define("DB_PASS", "texaco");
-define("DB_SERVER", "localhost");
-
+require 'connection_parameters.php';
 // Create connection
 $conn = new mysqli(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
 
@@ -20,6 +15,8 @@ $stmt = $conn->prepare("INSERT INTO ngo (name, description, email) VALUES (?, ?,
 $stmt->bind_param("sss", $name, $description, $email);
 
 // set parameters and execute
+
+/*
 $name = "John";
 $description = "Doe";
 $email = "john@example.com";
@@ -36,6 +33,7 @@ $email = "julie@example.com";
 $stmt->execute();
 
 echo "New records created successfully";
+*/
 
 $stmt->close();
 $conn->close();
