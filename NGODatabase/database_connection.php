@@ -11,8 +11,8 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 // prepare and bind
-$stmt = $conn->prepare("INSERT INTO ngo (name, description, email) VALUES (?, ?, ?)");
-$stmt->bind_param("sss", $name, $description, $email);
+// $stmt = $conn->prepare("INSERT INTO ngo (name, description, email) VALUES (?, ?, ?)");
+// $stmt->bind_param("sss", $name, $description, $email);
 
 // set parameters and execute
 
